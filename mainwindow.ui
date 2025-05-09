@@ -1,0 +1,5817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1400</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: black;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="pianowidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>430</y>
+      <width>1231</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="keys_86">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B8</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_30">
+     <property name="geometry">
+      <rect>
+       <x>438</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>D3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_28">
+     <property name="geometry">
+      <rect>
+       <x>416</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_16">
+     <property name="geometry">
+      <rect>
+       <x>261</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_51">
+     <property name="geometry">
+      <rect>
+       <x>703</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_32">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>E3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_43">
+     <property name="geometry">
+      <rect>
+       <x>603</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+E4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_76">
+     <property name="geometry">
+      <rect>
+       <x>1036</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_9">
+     <property name="geometry">
+      <rect>
+       <x>172</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>F1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_42">
+     <property name="geometry">
+      <rect>
+       <x>593</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>D4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_64">
+     <property name="geometry">
+      <rect>
+       <x>881</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_56">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>E5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_55">
+     <property name="geometry">
+      <rect>
+       <x>763</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+E5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_12">
+     <property name="geometry">
+      <rect>
+       <x>207</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+A2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_77">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+D7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_87">
+     <property name="geometry">
+      <rect>
+       <x>1168</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B8</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_19">
+     <property name="geometry">
+      <rect>
+       <x>296</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+E2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_22">
+     <property name="geometry">
+      <rect>
+       <x>336</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+G2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_61">
+     <property name="geometry">
+      <rect>
+       <x>836</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>A6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_18">
+     <property name="geometry">
+      <rect>
+       <x>283</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>D2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+D1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_15">
+     <property name="geometry">
+      <rect>
+       <x>238</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_37">
+     <property name="geometry">
+      <rect>
+       <x>526</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>A4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_3">
+     <property name="geometry">
+      <rect>
+       <x>83</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B0</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_17">
+     <property name="geometry">
+      <rect>
+       <x>273</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}       </string>
+     </property>
+     <property name="text">
+      <string>♭
+D2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_13">
+     <property name="geometry">
+      <rect>
+       <x>216</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>A2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_41">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+D4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_36">
+     <property name="geometry">
+      <rect>
+       <x>517</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+A4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_11">
+     <property name="geometry">
+      <rect>
+       <x>194</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>G1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_25">
+     <property name="geometry">
+      <rect>
+       <x>371</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>A3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_82">
+     <property name="geometry">
+      <rect>
+       <x>1113</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+G7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_49">
+     <property name="geometry">
+      <rect>
+       <x>681</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>A5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_63">
+     <property name="geometry">
+      <rect>
+       <x>858</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_85">
+     <property name="geometry">
+      <rect>
+       <x>1146</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>A8</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_38">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_54">
+     <property name="geometry">
+      <rect>
+       <x>748</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>D5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_59">
+     <property name="geometry">
+      <rect>
+       <x>814</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>G5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_31">
+     <property name="geometry">
+      <rect>
+       <x>453</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+E3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_65">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+D6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_84">
+     <property name="geometry">
+      <rect>
+       <x>1137</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+A8</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_8">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>E1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_34">
+     <property name="geometry">
+      <rect>
+       <x>493</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+G3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_10">
+     <property name="geometry">
+      <rect>
+       <x>183</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+G1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_47">
+     <property name="geometry">
+      <rect>
+       <x>659</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>G4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_70">
+     <property name="geometry">
+      <rect>
+       <x>953</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+G6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_78">
+     <property name="geometry">
+      <rect>
+       <x>1058</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>D7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_73">
+     <property name="geometry">
+      <rect>
+       <x>991</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>A7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_60">
+     <property name="geometry">
+      <rect>
+       <x>827</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+A6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_24">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+A3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_26">
+     <property name="geometry">
+      <rect>
+       <x>383</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_33">
+     <property name="geometry">
+      <rect>
+       <x>482</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>F3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_2">
+     <property name="geometry">
+      <rect>
+       <x>73</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B0</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_71">
+     <property name="geometry">
+      <rect>
+       <x>969</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>G6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_27">
+     <property name="geometry">
+      <rect>
+       <x>393</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_67">
+     <property name="geometry">
+      <rect>
+       <x>913</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+E6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_69">
+     <property name="geometry">
+      <rect>
+       <x>947</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>F6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_20">
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>E2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_46">
+     <property name="geometry">
+      <rect>
+       <x>643</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+G4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_66">
+     <property name="geometry">
+      <rect>
+       <x>903</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>D6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_74">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_83">
+     <property name="geometry">
+      <rect>
+       <x>1124</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>G7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_40">
+     <property name="geometry">
+      <rect>
+       <x>571</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_6">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>D1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_35">
+     <property name="geometry">
+      <rect>
+       <x>504</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>G3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_14">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_4">
+     <property name="geometry">
+      <rect>
+       <x>106</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_72">
+     <property name="geometry">
+      <rect>
+       <x>977</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+A7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_88">
+     <property name="geometry">
+      <rect>
+       <x>1191</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C8</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_79">
+     <property name="geometry">
+      <rect>
+       <x>1073</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+E7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_21">
+     <property name="geometry">
+      <rect>
+       <x>327</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>F2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_7">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+E1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_68">
+     <property name="geometry">
+      <rect>
+       <x>925</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>E6</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_57">
+     <property name="geometry">
+      <rect>
+       <x>792</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>F5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_1">
+     <property name="geometry">
+      <rect>
+       <x>61</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string>A0</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_23">
+     <property name="geometry">
+      <rect>
+       <x>349</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>G2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_44">
+     <property name="geometry">
+      <rect>
+       <x>615</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>E4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_80">
+     <property name="geometry">
+      <rect>
+       <x>1080</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>E7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_45">
+     <property name="geometry">
+      <rect>
+       <x>637</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>F4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_58">
+     <property name="geometry">
+      <rect>
+       <x>803</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+G5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_52">
+     <property name="geometry">
+      <rect>
+       <x>726</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>C5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_75">
+     <property name="geometry">
+      <rect>
+       <x>1013</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_53">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+D5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_50">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_81">
+     <property name="geometry">
+      <rect>
+       <x>1102</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>F7</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_48">
+     <property name="geometry">
+      <rect>
+       <x>667</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+A5</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_29">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+D3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_39">
+     <property name="geometry">
+      <rect>
+       <x>548</x>
+       <y>40</y>
+       <width>22</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+text-align: bottom; padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}   </string>
+     </property>
+     <property name="text">
+      <string>B4</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keys_62">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>40</y>
+       <width>20</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color:black;              /* 默认按钮背景颜色 */
+    color: white;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: grey;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}      </string>
+     </property>
+     <property name="text">
+      <string>♭
+B6</string>
+     </property>
+    </widget>
+    <zorder>keys_30</zorder>
+    <zorder>keys_28</zorder>
+    <zorder>keys_16</zorder>
+    <zorder>keys_51</zorder>
+    <zorder>keys_32</zorder>
+    <zorder>keys_76</zorder>
+    <zorder>keys_9</zorder>
+    <zorder>keys_42</zorder>
+    <zorder>keys_64</zorder>
+    <zorder>keys_56</zorder>
+    <zorder>keys_87</zorder>
+    <zorder>keys_61</zorder>
+    <zorder>keys_18</zorder>
+    <zorder>keys_15</zorder>
+    <zorder>keys_37</zorder>
+    <zorder>keys_3</zorder>
+    <zorder>keys_17</zorder>
+    <zorder>keys_13</zorder>
+    <zorder>keys_11</zorder>
+    <zorder>keys_49</zorder>
+    <zorder>keys_63</zorder>
+    <zorder>keys_85</zorder>
+    <zorder>keys_54</zorder>
+    <zorder>keys_59</zorder>
+    <zorder>keys_31</zorder>
+    <zorder>keys_8</zorder>
+    <zorder>keys_10</zorder>
+    <zorder>keys_47</zorder>
+    <zorder>keys_78</zorder>
+    <zorder>keys_73</zorder>
+    <zorder>keys_60</zorder>
+    <zorder>keys_33</zorder>
+    <zorder>keys_71</zorder>
+    <zorder>keys_27</zorder>
+    <zorder>keys_69</zorder>
+    <zorder>keys_20</zorder>
+    <zorder>keys_66</zorder>
+    <zorder>keys_83</zorder>
+    <zorder>keys_40</zorder>
+    <zorder>keys_6</zorder>
+    <zorder>keys_35</zorder>
+    <zorder>keys_14</zorder>
+    <zorder>keys_4</zorder>
+    <zorder>keys_72</zorder>
+    <zorder>keys_88</zorder>
+    <zorder>keys_21</zorder>
+    <zorder>keys_7</zorder>
+    <zorder>keys_68</zorder>
+    <zorder>keys_57</zorder>
+    <zorder>keys_1</zorder>
+    <zorder>keys_23</zorder>
+    <zorder>keys_44</zorder>
+    <zorder>keys_80</zorder>
+    <zorder>keys_45</zorder>
+    <zorder>keys_58</zorder>
+    <zorder>keys_52</zorder>
+    <zorder>keys_75</zorder>
+    <zorder>keys_53</zorder>
+    <zorder>keys_50</zorder>
+    <zorder>keys_81</zorder>
+    <zorder>keys_48</zorder>
+    <zorder>keys_29</zorder>
+    <zorder>keys_39</zorder>
+    <zorder>keys_62</zorder>
+    <zorder>keys_2</zorder>
+    <zorder>keys_5</zorder>
+    <zorder>keys_12</zorder>
+    <zorder>keys_19</zorder>
+    <zorder>keys_22</zorder>
+    <zorder>keys_25</zorder>
+    <zorder>keys_24</zorder>
+    <zorder>keys_26</zorder>
+    <zorder>keys_34</zorder>
+    <zorder>keys_36</zorder>
+    <zorder>keys_38</zorder>
+    <zorder>keys_41</zorder>
+    <zorder>keys_43</zorder>
+    <zorder>keys_46</zorder>
+    <zorder>keys_55</zorder>
+    <zorder>keys_65</zorder>
+    <zorder>keys_67</zorder>
+    <zorder>keys_70</zorder>
+    <zorder>keys_74</zorder>
+    <zorder>keys_77</zorder>
+    <zorder>keys_79</zorder>
+    <zorder>keys_82</zorder>
+    <zorder>keys_84</zorder>
+    <zorder>keys_86</zorder>
+   </widget>
+   <widget class="QWidget" name="virtualkeyboardwidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>650</y>
+      <width>721</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="keyboard_57">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_36">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_84">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_67">
+     <property name="geometry">
+      <rect>
+       <x>275</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_16">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_33">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_19">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_53">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_86">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>140</y>
+       <width>85</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_7">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_76">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_39">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_69">
+     <property name="geometry">
+      <rect>
+       <x>335</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_44">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_14">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: grey;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string>截屏</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_77">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_50">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_93">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>170</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: grey;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string>windows</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_95">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>170</y>
+       <width>175</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_31">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_75">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_34">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_27">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_55">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_85">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_6">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_89">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_80">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_101">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>170</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_97">
+     <property name="geometry">
+      <rect>
+       <x>345</x>
+       <y>170</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: grey;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string>FN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_94">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>170</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: grey;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string>alt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_62">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_65">
+     <property name="geometry">
+      <rect>
+       <x>215</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_10">
+     <property name="geometry">
+      <rect>
+       <x>345</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_18">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_83">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_51">
+     <property name="geometry">
+      <rect>
+       <x>415</x>
+       <y>80</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_42">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_20">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_45">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_21">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_56">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_96">
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>170</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: grey;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string>atl</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_49">
+     <property name="geometry">
+      <rect>
+       <x>355</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_15">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_11">
+     <property name="geometry">
+      <rect>
+       <x>375</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_90">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_29">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_79">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_43">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_68">
+     <property name="geometry">
+      <rect>
+       <x>305</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_98">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>170</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: grey;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_82">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_47">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_81">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_74">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_4">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_54">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_24">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_104">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>170</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_52">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_60">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_103">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>170</y>
+       <width>61</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_32">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_99">
+     <property name="geometry">
+      <rect>
+       <x>425</x>
+       <y>170</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_72">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_59">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>55</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_63">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_13">
+     <property name="geometry">
+      <rect>
+       <x>435</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_71">
+     <property name="geometry">
+      <rect>
+       <x>395</x>
+       <y>110</y>
+       <width>71</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_28">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_35">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_102">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>170</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_64">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_58">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>80</y>
+       <width>30</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_61">
+     <property name="geometry">
+      <rect>
+       <x>95</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_25">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_73">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_91">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>140</y>
+       <width>30</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_88">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_100">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>170</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_9">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_12">
+     <property name="geometry">
+      <rect>
+       <x>405</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_37">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_46">
+     <property name="geometry">
+      <rect>
+       <x>265</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_23">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_22">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_78">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_48">
+     <property name="geometry">
+      <rect>
+       <x>325</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_87">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>140</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_70">
+     <property name="geometry">
+      <rect>
+       <x>365</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_92">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>40</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_30">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>50</y>
+       <width>65</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_40">
+     <property name="geometry">
+      <rect>
+       <x>85</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_26">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>50</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_38">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>45</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_66">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>110</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_5">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_8">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="keyboard_41">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>80</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="createMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>670</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>创建映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>770</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>使用映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopDeletebutton">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>720</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>停止删除映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>720</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>保存映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startdeletebutton">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>670</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>开始删除映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
