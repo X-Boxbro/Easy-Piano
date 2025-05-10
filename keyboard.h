@@ -31,5 +31,5 @@ private:
     mappingmanager* mappingManager;
 };
 
-
 #endif // KEYBOARD_H
+

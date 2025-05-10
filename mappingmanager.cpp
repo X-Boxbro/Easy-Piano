@@ -2,12 +2,15 @@
 #include "qdir.h"
 #include<QDebug>
 
+
 mappingmanager::mappingmanager(keyboard* virtualKeyboard, QObject* parent)
     : QObject(parent), virtualKeyboard(virtualKeyboard), currentVirtualKey(nullptr), currentPianoKey(nullptr) {
+    // 连接虚拟键盘按钮点击信号
     for (QPushButton* button : virtualKeyboard->getAllButtons()) {
         connect(button, &QPushButton::clicked, this, &mappingmanager::onVirtualKeyClicked);
     }
 }
+
 
 void mappingmanager::setPianoKeys(pianokeys* pianoKeys) {
     this->pianoKeys = pianoKeys;
@@ -15,8 +18,10 @@ void mappingmanager::setPianoKeys(pianokeys* pianoKeys) {
 
 void mappingmanager::updateVirtualKeyText(QPushButton* virtualKey, QPushButton* pianoKey) {
     if (!virtualKey || !pianoKey) return;
+
     QString pianoKeyText = pianoKey->text();
     virtualKey->setText(pianoKeyText);
+
     qDebug() << "Updated virtual key text. VirtualKey:" << virtualKey->objectName()
              << ", Text:" << pianoKeyText;
 }
@@ -39,24 +44,24 @@ void mappingmanager::startDeleting() {
 
 void mappingmanager::deleteMapping(){
     if (isDeletingMode==true){
-        currentVirtualKey = qobject_cast<QPushButton*>(sender());
-        if(!currentVirtualKey){
-            qDebug()<<"currentVirtualKey not found";
-            return;}
+    currentVirtualKey = qobject_cast<QPushButton*>(sender());
+    if(!currentVirtualKey){
+        qDebug()<<"currentVirtualKey not found";
+        return;}
 
-        int scanCode=virtualKeyboard->getScanCodeToButtonMap().key(currentVirtualKey,-1);
-        if(scanCode==-1||scanCode==0){
-            qWarning()<<"Virtual key not found in scanCodeToButtonMap.";
-            return ;
-        }
-        if(keyToPianoMap.contains(scanCode)){
-            QPushButton* temp =keyToPianoMap[scanCode];
-            qDebug()<<"deleting virtualKeyScanCode:"<<scanCode<<" "<<"with PianoKey:"<<temp->text();
-            keyToPianoMap.remove(scanCode);
-            currentVirtualKey->setText("");
-        }else {
-            qWarning() << "No mapping found for ScanCode:" << scanCode;
-        }
+    int scanCode=virtualKeyboard->getScanCodeToButtonMap().key(currentVirtualKey,-1);
+    if(scanCode==-1||scanCode==0){
+        qWarning()<<"Virtual key not found in scanCodeToButtonMap.";
+        return ;
+    }
+    if(keyToPianoMap.contains(scanCode)){
+        QPushButton* temp =keyToPianoMap[scanCode];
+        qDebug()<<"deleting virtualKeyScanCode:"<<scanCode<<" "<<"with PianoKey:"<<temp->text();
+        keyToPianoMap.remove(scanCode);
+        currentVirtualKey->setText("");
+    }else {
+        qWarning() << "No mapping found for ScanCode:" << scanCode;
+    }
     }
 }
 
@@ -73,10 +78,12 @@ void mappingmanager::stopMapping() {
 
 void mappingmanager::onVirtualKeyClicked() {
     if (!isMappingMode) return;
+
     currentVirtualKey = qobject_cast<QPushButton*>(sender());
     if (currentVirtualKey && currentPianoKey) {
         int scanCode = virtualKeyboard->getScanCodeToButtonMap().key(currentVirtualKey);
         qDebug() << "Virtual key pressed. ScanCode:" << scanCode;
+
         if (currentPianoKey) {
             keyToPianoMap[scanCode] = currentPianoKey;
             updateVirtualKeyText(currentVirtualKey, currentPianoKey);
@@ -127,7 +134,6 @@ void mappingmanager::saveMappingToFile(const QString& filePath) {
 
 void mappingmanager::loadMappingFromFile(const QString& filePath) {
     currentMappingPath=filePath;
-    // 首先清空所有虚拟键盘按钮的文本
     for (QPushButton* button : virtualKeyboard->getAllButtons()) {
         if (button) {
             button->setText("");
@@ -138,13 +144,16 @@ void mappingmanager::loadMappingFromFile(const QString& filePath) {
         qWarning() << "Failed to open mapping file:" << filePath;
         return;
     }
+
     QByteArray data = file.readAll();
     file.close();
+
     QJsonDocument doc = QJsonDocument::fromJson(data);
     if (!doc.isObject()) {
         qWarning() << "Invalid mapping file format";
         return;
     }
+
     QJsonObject root = doc.object();
     QJsonArray mappingArray = root["mappings"].toArray();
     keyToPianoMap.clear();
@@ -152,8 +161,11 @@ void mappingmanager::loadMappingFromFile(const QString& filePath) {
         QJsonObject mapping = value.toObject();
         int scanCode = mapping["scanCode"].toInt();
         QString pianoKeyName = mapping["pianoKey"].toString();
+
+        // 查找琴键按钮
         QPushButton* pianoKey = virtualKeyboard->parent()->findChild<QPushButton*>(pianoKeyName);
         QPushButton* virtualKey = virtualKeyboard->getScanCodeToButtonMap().value(scanCode);
+
         if (pianoKey) {
             keyToPianoMap[scanCode] = pianoKey;
             if (virtualKey) {
@@ -169,7 +181,6 @@ void mappingmanager::loadMappingFromFile(const QString& filePath) {
 QPushButton* mappingmanager::getPianoKeyForScanCode(int scanCode) const {
     return keyToPianoMap.value(scanCode, nullptr);
 }
-
 QString mappingmanager::getCurrentMappingPath() const {
     return currentMappingPath;
 }

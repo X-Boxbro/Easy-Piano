@@ -1,9 +1,9 @@
 #ifndef FLUIDSYNTH_INITIAL_H
 #define FLUIDSYNTH_INITIAL_H
 
-
+//添加头文件
 #include"fluidsynth.h"
-
+//添加使用的标准库
 #include<string>
 
 class fluidsynth_initial

@@ -6,6 +6,9 @@
 #include"pianokeys.h"
 #include"keyboard.h"
 #include"mappingmanager.h"
+#include"notesensesetting.h"
+#include"notesenseanswer.h"
+#include"randomnotegenerator.h"
 #include<QString>
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,12 +29,23 @@ public:
     void onLoadMappingClicked();
     void startDeleting();
     void stopDeleting();
+    void on_modeButton_clicked();
+    void on_earGameButton_clicked();
+    void on_songSenseButton_clicked();
+    void openFreeWindow();
+    void returnfromfreeWindow();
+    void openNoteSenseWindow();
+    void returnfromnoteWindow();
+    void openSongWindow();
+    void returnfromsongWindow();
 private:
     Ui::MainWindow *ui;
     fluidsynth_initial*synth;
     pianokeys*mypiano;
-    keyboard* virtualKeyboard;
     mappingmanager*mymanager;
+    keyboard* virtualKeyboard;
+    RandomNoteGenerator*mygenerator;
+    notesenseanswer*mynoteanswer;
     QString mappingFolderPath;
 };
 #endif // MAINWINDOW_H

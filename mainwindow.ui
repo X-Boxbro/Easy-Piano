@@ -10,6 +10,12 @@
     <height>900</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>1400</width>
+    <height>900</height>
+   </size>
+  </property>
   <property name="maximumSize">
    <size>
     <width>1400</width>
@@ -17,13 +23,343 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>pianosetting</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: black;
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="createMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>670</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>创建映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>720</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>保存映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadMappingButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>770</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>使用映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startdeletebutton">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>670</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>开始删除映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopDeletebutton">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>720</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>停止删除映射</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="modeButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>210</y>
+      <width>300</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>模式</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="earGameButton">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>320</y>
+      <width>231</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>音感游戏</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="freePlayButton">
+    <property name="geometry">
+     <rect>
+      <x>729</x>
+      <y>320</y>
+      <width>251</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>自由弹奏</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="noteSenseButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>250</y>
+      <width>161</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 30px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>音符音感</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="songSenseButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>330</y>
+      <width>161</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 30px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>和弦音感</string>
+    </property>
+   </widget>
    <widget class="QWidget" name="pianowidget" native="true">
     <property name="geometry">
      <rect>
@@ -5624,10 +5960,10 @@ QPushButton:pressed {
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="createMappingButton">
+   <widget class="QPushButton" name="returnfromfreebutton">
     <property name="geometry">
      <rect>
-      <x>990</x>
+      <x>1190</x>
       <y>670</y>
       <width>80</width>
       <height>51</height>
@@ -5650,7 +5986,7 @@ QPushButton:pressed {
 }    </string>
     </property>
     <property name="text">
-     <string>创建映射</string>
+     <string>返回</string>
     </property>
     <property name="iconSize">
      <size>
@@ -5659,10 +5995,45 @@ QPushButton:pressed {
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="loadMappingButton">
+   <widget class="QPushButton" name="returnfromnotebutton">
     <property name="geometry">
      <rect>
-      <x>990</x>
+      <x>1190</x>
+      <y>720</y>
+      <width>80</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;              /* 默认按钮背景颜色 */
+    color: black;                         /* 按钮文字颜色 */
+    border: 1px solid black;              /* 按钮边框 */
+    border-radius: 0;                     /* 防止按钮边角圆滑 */
+}
+
+QPushButton:hover {
+    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
+}    </string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returnfromsongbutton">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
       <y>770</y>
       <width>80</width>
       <height>51</height>
@@ -5685,7 +6056,7 @@ QPushButton:pressed {
 }    </string>
     </property>
     <property name="text">
-     <string>使用映射</string>
+     <string>返回</string>
     </property>
     <property name="iconSize">
      <size>
@@ -5694,109 +6065,97 @@ QPushButton:pressed {
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="stopDeletebutton">
+   <widget class="QPushButton" name="randomstartbutton">
     <property name="geometry">
      <rect>
-      <x>1070</x>
-      <y>720</y>
-      <width>80</width>
-      <height>51</height>
+      <x>310</x>
+      <y>30</y>
+      <width>281</width>
+      <height>100</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: white;              /* 默认按钮背景颜色 */
-    color: black;                         /* 按钮文字颜色 */
-    border: 1px solid black;              /* 按钮边框 */
-    border-radius: 0;                     /* 防止按钮边角圆滑 */
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
 }
 
 QPushButton:hover {
-    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+    color:lightgray;         
 }
 
 QPushButton:pressed {
-    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
-}    </string>
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
     </property>
     <property name="text">
-     <string>停止删除映射</string>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>15</width>
-      <height>15</height>
-     </size>
+     <string>播放音符</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="saveMappingButton">
+   <widget class="QPushButton" name="noteanswerbutton">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>720</y>
-      <width>80</width>
-      <height>51</height>
+      <x>310</x>
+      <y>130</y>
+      <width>281</width>
+      <height>100</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: white;              /* 默认按钮背景颜色 */
-    color: black;                         /* 按钮文字颜色 */
-    border: 1px solid black;              /* 按钮边框 */
-    border-radius: 0;                     /* 防止按钮边角圆滑 */
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
 }
 
 QPushButton:hover {
-    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+    color:lightgray;         
 }
 
 QPushButton:pressed {
-    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
-}    </string>
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
     </property>
     <property name="text">
-     <string>保存映射</string>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>15</width>
-      <height>15</height>
-     </size>
+     <string>验证答案</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="startdeletebutton">
+   <widget class="QPushButton" name="nextnotebutton">
     <property name="geometry">
      <rect>
-      <x>1070</x>
-      <y>670</y>
-      <width>80</width>
-      <height>51</height>
+      <x>310</x>
+      <y>230</y>
+      <width>281</width>
+      <height>100</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-    background-color: white;              /* 默认按钮背景颜色 */
-    color: black;                         /* 按钮文字颜色 */
-    border: 1px solid black;              /* 按钮边框 */
-    border-radius: 0;                     /* 防止按钮边角圆滑 */
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
 }
 
 QPushButton:hover {
-    background-color: #F0F0F0;            /* 鼠标悬停时背景颜色 */
+    color:lightgray;         
 }
 
 QPushButton:pressed {
-    background-color: #FFA500;            /* 按下时背景颜色改为红橙色 */
-}    </string>
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
     </property>
     <property name="text">
-     <string>开始删除映射</string>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>15</width>
-      <height>15</height>
-     </size>
+     <string>下一组音符</string>
     </property>
    </widget>
   </widget>

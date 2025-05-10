@@ -1,8 +1,9 @@
 #ifndef PIANOKEYS_H
 #define PIANOKEYS_H
 
-
+//添加头文件
 #include "fluidsynth_initial.h"
+//添加使用的标准库
 #include<QObject>
 #include<QPushButton>
 #include<QMap>

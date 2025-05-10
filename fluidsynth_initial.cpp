@@ -6,10 +6,7 @@ fluidsynth_initial::fluidsynth_initial(const std::string soundfontpath) : settin
 
     settings = new_fluid_settings();
 
-
     fluid_settings_setnum(settings, "synth.sample-rate", 44100.0);
-
-
     fluid_settings_setnum(settings, "synth.reverb.damp", 0.3);
     fluid_settings_setnum(settings, "synth.reverb.level", 0.7);
     fluid_settings_setnum(settings, "synth.reverb.room-size", 1.0);
@@ -20,18 +17,14 @@ fluidsynth_initial::fluidsynth_initial(const std::string soundfontpath) : settin
     fluid_settings_setnum(settings, "synth.chorus.speed", 0.36);
     fluid_settings_setint(settings, "synth.reverb.active", 1);
     fluid_settings_setint(settings, "synth.chorus.active", 1);
-
     fluid_settings_setnum(settings, "synth.gain", 1.5);
-    // 创建合成器
     synth = new_fluid_synth(settings);
-    // 创建音频驱动
     audioDriver = new_fluid_audio_driver(settings, synth);
-    // 加载默认 SoundFont
     if (!loadsoundfont(soundfontpath)) {
         std::cerr << "Failed to load default SoundFont: " << soundfontpath << std::endl;
     }
 }
-//加载声音字节文件函数实现
+
 bool fluidsynth_initial::loadsoundfont(const std::string soundfontpath){
     int result = fluid_synth_sfload(synth, soundfontpath.c_str(), 1);
     if (result == FLUID_FAILED) {
@@ -40,7 +33,7 @@ bool fluidsynth_initial::loadsoundfont(const std::string soundfontpath){
     }
     return true;
 }
-//playNote函数实现
+
 void fluidsynth_initial::playNote(int channel,int key,int velocity){
     fluid_synth_noteon(synth,channel,key,velocity);
 }

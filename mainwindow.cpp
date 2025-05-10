@@ -1,17 +1,21 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+//添加使用的库
 #include<string>
 #include <QFileDialog>
 #include <QFile>
 #include <QStandardPaths>
 #include <QDebug>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
-    ,synth(nullptr)
+    , synth(nullptr)
     ,mypiano(nullptr)
-    ,virtualKeyboard(nullptr)
     ,mymanager(nullptr)
+    ,virtualKeyboard(nullptr)
+    ,mygenerator(nullptr)
+    ,mynoteanswer(nullptr)
 {
     ui->setupUi(this);
     QString mappingDirPath = QDir::currentPath() + "/mymapping";
@@ -24,12 +28,12 @@ MainWindow::MainWindow(QWidget *parent)
         }
     }
     this->mappingFolderPath = mappingDirPath;
+
     QString sf2Path = loadSf2FromResource(":/GeneralUser-GS.sf2");
     if (sf2Path.isEmpty()) {
         qDebug() << "Failed to load SoundFont";
         return;
     }
-
     std::string mypath = sf2Path.toStdString();
     synth =new fluidsynth_initial(mypath);
     mypiano=new pianokeys(synth,this);
@@ -39,19 +43,42 @@ MainWindow::MainWindow(QWidget *parent)
     virtualKeyboard->setFocus();
     mymanager = new mappingmanager(virtualKeyboard, this);
     virtualKeyboard->setMappingManager(mymanager);
-
+    mygenerator = new RandomNoteGenerator(synth);
+    mynoteanswer=new notesenseanswer(mygenerator,mypiano);
     connect(ui->createMappingButton, &QPushButton::clicked, this, &MainWindow::onCreateMappingClicked);
     connect(ui->saveMappingButton, &QPushButton::clicked, this, &MainWindow::onSaveMappingClicked);
     connect(ui->loadMappingButton, &QPushButton::clicked, this, &MainWindow::onLoadMappingClicked);
     connect(ui->startdeletebutton,&QPushButton::clicked,this,&MainWindow::startDeleting);
     connect(ui->stopDeletebutton,&QPushButton::clicked,this,&MainWindow::stopDeleting);
-}
+
+
+    ui->earGameButton->hide();
+    ui->freePlayButton->hide();
+    ui->noteSenseButton->hide();
+    ui->songSenseButton->hide();
+    ui->returnfromfreebutton->hide();
+    ui->returnfromnotebutton->hide();
+    ui->returnfromsongbutton->hide();
+
+    ui->randomstartbutton->hide();
+    ui->noteanswerbutton->hide();
+    ui->nextnotebutton->hide();
+
+
+    connect(ui->modeButton, &QPushButton::clicked, this, &MainWindow::on_modeButton_clicked);
+    connect(ui->earGameButton,&QPushButton::clicked,this,&MainWindow::on_earGameButton_clicked);
+    connect(ui->freePlayButton,&QPushButton::clicked,this,&MainWindow::openFreeWindow);
+    connect(ui->returnfromfreebutton,&QPushButton::clicked,this,&MainWindow::returnfromfreeWindow);
+    connect(ui->noteSenseButton,&QPushButton::clicked,this,&MainWindow::openNoteSenseWindow);
+    connect(ui->returnfromnotebutton,&QPushButton::clicked,this,&MainWindow::returnfromnoteWindow);
+    connect(ui->songSenseButton,&QPushButton::clicked,this,&MainWindow::openSongWindow);
+    connect(ui->returnfromsongbutton,&QPushButton::clicked,this,&MainWindow::returnfromsongWindow);
+;}
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
 QString MainWindow::loadSf2FromResource(const QString& resourcePath) {
     QFile sf2File(resourcePath);
     if (!sf2File.open(QIODevice::ReadOnly)) {
@@ -73,7 +100,121 @@ QString MainWindow::loadSf2FromResource(const QString& resourcePath) {
     return tempPath;
 }
 
+
+void MainWindow::openFreeWindow() {
+
+    ui->createMappingButton->hide();
+    ui->startdeletebutton->hide();
+    ui->saveMappingButton->hide();
+    ui->stopDeletebutton->hide();
+    ui->loadMappingButton->hide();
+    ui->createMappingButton->hide();
+    ui->modeButton->hide();
+    ui->earGameButton->hide();
+    ui->freePlayButton->hide();
+    ui->returnfromfreebutton->setVisible(true);
+    virtualKeyboard->setFocus();
+}
+
+void MainWindow::returnfromfreeWindow(){
+    ui->createMappingButton->setVisible(true);
+    ui->startdeletebutton->setVisible(true);
+    ui->saveMappingButton->setVisible(true);
+    ui->stopDeletebutton->setVisible(true);
+    ui->loadMappingButton->setVisible(true);
+    ui->modeButton->setVisible(true);
+    ui->earGameButton->setVisible(true);
+    ui->freePlayButton->setVisible(true);
+    ui->returnfromfreebutton->hide();
+    virtualKeyboard->setFocus();
+}
+//打开音符音感练习界面
+void MainWindow::openNoteSenseWindow(){
+
+    notesensesetting dialog(this);
+    if (dialog.exec() == QDialog::Accepted) {
+        ui->createMappingButton->hide();
+        ui->startdeletebutton->hide();
+        ui->saveMappingButton->hide();
+        ui->stopDeletebutton->hide();
+        ui->loadMappingButton->hide();
+        ui->createMappingButton->hide();
+        ui->modeButton->hide();
+        ui->earGameButton->hide();
+        ui->freePlayButton->hide();
+        ui->noteSenseButton->hide();
+        ui->songSenseButton->hide();
+        ui->returnfromnotebutton->setVisible(true);
+        ui->randomstartbutton->setVisible(true);
+        ui->noteanswerbutton->setVisible(true);
+        ui->nextnotebutton->setVisible(true);
+        virtualKeyboard->setFocus();
+        // 获取用户设置的值
+        int noteCount = dialog.noteCount();
+        int speed = dialog.speed();
+        QList<int> scales = dialog.selectedScales();
+
+        qDebug()<<noteCount<<" "<<speed<<" "<<scales;
+
+        mygenerator->setNoteCount(noteCount);
+        mygenerator->setSpeed(speed);
+        mygenerator->setScales(scales);
+        mygenerator->setvirtualKeyboard(virtualKeyboard);
+
+        connect(ui->randomstartbutton,&QPushButton::clicked,mygenerator,&RandomNoteGenerator::start);
+        connect(ui->nextnotebutton,&QPushButton::clicked,mygenerator,&RandomNoteGenerator::nextNote);
+        connect(ui->noteanswerbutton,&QPushButton::clicked,mynoteanswer,&notesenseanswer::getAnswer);
+    }
+}
+void MainWindow::returnfromnoteWindow(){
+    ui->createMappingButton->setVisible(true);
+    ui->startdeletebutton->setVisible(true);
+    ui->saveMappingButton->setVisible(true);
+    ui->stopDeletebutton->setVisible(true);
+    ui->loadMappingButton->setVisible(true);
+    ui->modeButton->setVisible(true);
+    ui->earGameButton->setVisible(true);
+    ui->freePlayButton->setVisible(true);
+    ui->noteSenseButton->setVisible(true);
+    ui->songSenseButton->setVisible(true);
+    ui->returnfromnotebutton->hide();
+    ui->randomstartbutton->hide();
+    ui->noteanswerbutton->hide();
+    ui->nextnotebutton->hide();
+    virtualKeyboard->setFocus();
+}
+void MainWindow::openSongWindow(){
+    ui->createMappingButton->hide();
+    ui->startdeletebutton->hide();
+    ui->saveMappingButton->hide();
+    ui->stopDeletebutton->hide();
+    ui->loadMappingButton->hide();
+    ui->createMappingButton->hide();
+    ui->modeButton->hide();
+    ui->earGameButton->hide();
+    ui->freePlayButton->hide();
+    ui->earGameButton->hide();
+    ui->freePlayButton->hide();
+    ui->returnfromsongbutton->setVisible(true);
+    virtualKeyboard->setFocus();
+}
+void MainWindow::returnfromsongWindow(){
+    ui->createMappingButton->setVisible(true);
+    ui->startdeletebutton->setVisible(true);
+    ui->saveMappingButton->setVisible(true);
+    ui->stopDeletebutton->setVisible(true);
+    ui->loadMappingButton->setVisible(true);
+    ui->modeButton->setVisible(true);
+    ui->earGameButton->setVisible(true);
+    ui->freePlayButton->setVisible(true);
+    ui->earGameButton->setVisible(true);
+    ui->freePlayButton->setVisible(true);
+    ui->returnfromsongbutton->hide();
+    virtualKeyboard->setFocus();
+};
+
 void MainWindow::onCreateMappingClicked() {
+
     for (QPushButton* button : mypiano->getAllButtons()) {
         connect(button, &QPushButton::clicked, mymanager, &mappingmanager::onPianoKeyClicked);
     }
@@ -89,6 +230,7 @@ void MainWindow::onSaveMappingClicked() {
         virtualKeyboard->setFocus();
     }
 }
+
 
 void MainWindow::onLoadMappingClicked() {
     QString filePath = QFileDialog::getOpenFileName(this, "打开映射文件",mappingFolderPath, "JSON Files (*.json)");
@@ -109,3 +251,22 @@ void MainWindow::startDeleting() {
 void MainWindow::stopDeleting(){
     mymanager->stopDeleting();
 }
+
+void MainWindow::on_modeButton_clicked() {
+    ui->earGameButton->setVisible(!ui->earGameButton->isVisible());
+    ui->freePlayButton->setVisible(!ui->freePlayButton->isVisible());
+    virtualKeyboard->setFocus();
+
+    if (!ui->earGameButton->isVisible()) {
+        ui->noteSenseButton->hide();
+        ui->songSenseButton->hide();
+    }
+}
+
+
+void MainWindow::on_earGameButton_clicked() {
+    ui->noteSenseButton->setVisible(!ui->noteSenseButton->isVisible());
+    ui->songSenseButton->setVisible(!ui->songSenseButton->isVisible());
+    virtualKeyboard->setFocus();
+}
+
