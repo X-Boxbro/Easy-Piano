@@ -17,6 +17,7 @@ void notesenseanswer::getAnswer(){
     }
     currentIndex=0;
     pianokeysanswer();
+    virtualKeyboard->setFocus();
 }
 void notesenseanswer::pianokeysanswer(){
     answerNotes=generator->allAvailableNotes;
@@ -41,4 +42,7 @@ void notesenseanswer::pianokeysanswer(){
                 isAnswering = false;
             }
         });
+}
+void notesenseanswer::setvirtualKeyboard(keyboard*input){
+    virtualKeyboard=input;
 }

@@ -13,6 +13,8 @@ PKGCONFIG += fluidsynth  #You must Download them
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    chordsenseanswer.cpp \
+    chordsensesetting.cpp \
     fluidsynth_initial.cpp \
     keyboard.cpp \
     main.cpp \
@@ -21,10 +23,13 @@ SOURCES += \
     notesenseanswer.cpp \
     notesensesetting.cpp \
     pianokeys.cpp \
+    randomchordgenerator.cpp \
     randomnotegenerator.cpp \
     startwindow.cpp
 
 HEADERS += \
+    chordsenseanswer.h \
+    chordsensesetting.h \
     fluidsynth_initial.h \
     keyboard.h \
     mainwindow.h \
@@ -32,10 +37,12 @@ HEADERS += \
     notesenseanswer.h \
     notesensesetting.h \
     pianokeys.h \
+    randomchordgenerator.h \
     randomnotegenerator.h \
     startwindow.h
 
 FORMS += \
+    chordsensesetting.ui \
     mainwindow.ui \
     notesensesetting.ui \
     startwindow.ui

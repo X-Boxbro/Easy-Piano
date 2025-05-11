@@ -16,6 +16,8 @@ MainWindow::MainWindow(QWidget *parent)
     ,virtualKeyboard(nullptr)
     ,mygenerator(nullptr)
     ,mynoteanswer(nullptr)
+    ,mygenerator2(nullptr)
+    ,mychordanswer(nullptr)
 {
     ui->setupUi(this);
     QString mappingDirPath = QDir::currentPath() + "/mymapping";
@@ -45,6 +47,9 @@ MainWindow::MainWindow(QWidget *parent)
     virtualKeyboard->setMappingManager(mymanager);
     mygenerator = new RandomNoteGenerator(synth);
     mynoteanswer=new notesenseanswer(mygenerator,mypiano);
+    mygenerator2 =new RandomChordGenerator(synth);
+    mychordanswer=new chordsenseanswer(mygenerator2,mypiano);
+
     connect(ui->createMappingButton, &QPushButton::clicked, this, &MainWindow::onCreateMappingClicked);
     connect(ui->saveMappingButton, &QPushButton::clicked, this, &MainWindow::onSaveMappingClicked);
     connect(ui->loadMappingButton, &QPushButton::clicked, this, &MainWindow::onLoadMappingClicked);
@@ -58,12 +63,15 @@ MainWindow::MainWindow(QWidget *parent)
     ui->songSenseButton->hide();
     ui->returnfromfreebutton->hide();
     ui->returnfromnotebutton->hide();
-    ui->returnfromsongbutton->hide();
+    ui->returnfromchordbutton->hide();
 
     ui->randomstartbutton->hide();
     ui->noteanswerbutton->hide();
     ui->nextnotebutton->hide();
 
+    ui->randombutton->hide();
+    ui->chordanswerbutton->hide();
+    ui->nextchordbutton->hide();
 
     connect(ui->modeButton, &QPushButton::clicked, this, &MainWindow::on_modeButton_clicked);
     connect(ui->earGameButton,&QPushButton::clicked,this,&MainWindow::on_earGameButton_clicked);
@@ -71,12 +79,20 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->returnfromfreebutton,&QPushButton::clicked,this,&MainWindow::returnfromfreeWindow);
     connect(ui->noteSenseButton,&QPushButton::clicked,this,&MainWindow::openNoteSenseWindow);
     connect(ui->returnfromnotebutton,&QPushButton::clicked,this,&MainWindow::returnfromnoteWindow);
-    connect(ui->songSenseButton,&QPushButton::clicked,this,&MainWindow::openSongWindow);
-    connect(ui->returnfromsongbutton,&QPushButton::clicked,this,&MainWindow::returnfromsongWindow);
+    connect(ui->songSenseButton,&QPushButton::clicked,this,&MainWindow::openChordWindow);
+    connect(ui->returnfromchordbutton,&QPushButton::clicked,this,&MainWindow::returnfromChordWindow);
 ;}
 
 MainWindow::~MainWindow()
 {
+    delete synth;
+    delete mypiano;
+    delete mymanager;
+    delete virtualKeyboard;
+    delete mygenerator;
+    delete mygenerator2;
+    delete mynoteanswer;
+    delete mychordanswer;
     delete ui;
 }
 QString MainWindow::loadSf2FromResource(const QString& resourcePath) {
@@ -128,7 +144,7 @@ void MainWindow::returnfromfreeWindow(){
     ui->returnfromfreebutton->hide();
     virtualKeyboard->setFocus();
 }
-//打开音符音感练习界面
+
 void MainWindow::openNoteSenseWindow(){
 
     notesensesetting dialog(this);
@@ -149,17 +165,16 @@ void MainWindow::openNoteSenseWindow(){
         ui->noteanswerbutton->setVisible(true);
         ui->nextnotebutton->setVisible(true);
         virtualKeyboard->setFocus();
-        // 获取用户设置的值
+
         int noteCount = dialog.noteCount();
         int speed = dialog.speed();
         QList<int> scales = dialog.selectedScales();
-
-        qDebug()<<noteCount<<" "<<speed<<" "<<scales;
 
         mygenerator->setNoteCount(noteCount);
         mygenerator->setSpeed(speed);
         mygenerator->setScales(scales);
         mygenerator->setvirtualKeyboard(virtualKeyboard);
+        mynoteanswer->setvirtualKeyboard(virtualKeyboard);
 
         connect(ui->randomstartbutton,&QPushButton::clicked,mygenerator,&RandomNoteGenerator::start);
         connect(ui->nextnotebutton,&QPushButton::clicked,mygenerator,&RandomNoteGenerator::nextNote);
@@ -183,7 +198,9 @@ void MainWindow::returnfromnoteWindow(){
     ui->nextnotebutton->hide();
     virtualKeyboard->setFocus();
 }
-void MainWindow::openSongWindow(){
+void MainWindow::openChordWindow(){
+    chordsensesetting dialog(this);
+    if(dialog.exec() == QDialog::Accepted){
     ui->createMappingButton->hide();
     ui->startdeletebutton->hide();
     ui->saveMappingButton->hide();
@@ -195,10 +212,25 @@ void MainWindow::openSongWindow(){
     ui->freePlayButton->hide();
     ui->earGameButton->hide();
     ui->freePlayButton->hide();
-    ui->returnfromsongbutton->setVisible(true);
+    ui->returnfromchordbutton->setVisible(true);
+    ui->randombutton->setVisible(true);
+    ui->chordanswerbutton->setVisible(true);
+    ui->nextchordbutton->setVisible(true);
     virtualKeyboard->setFocus();
+
+    QStringList selectedChordNames = dialog.getSelectedChords();
+    qDebug()<<"You had seleted :"<<selectedChordNames;
+
+    mygenerator2->setAvailableChordList(selectedChordNames);
+    mygenerator2->setvirtualKeyboard(virtualKeyboard);
+    mychordanswer->setvirtualKeyboard(virtualKeyboard);
+
+    connect(ui->randombutton,&QPushButton::clicked,mygenerator2,&RandomChordGenerator::start);
+    connect(ui->nextchordbutton,&QPushButton::clicked,mygenerator2,&RandomChordGenerator::nextChord);
+    connect(ui->chordanswerbutton,&QPushButton::clicked,mychordanswer,&chordsenseanswer::getAnswer);
+    }
 }
-void MainWindow::returnfromsongWindow(){
+void MainWindow::returnfromChordWindow(){
     ui->createMappingButton->setVisible(true);
     ui->startdeletebutton->setVisible(true);
     ui->saveMappingButton->setVisible(true);
@@ -209,7 +241,10 @@ void MainWindow::returnfromsongWindow(){
     ui->freePlayButton->setVisible(true);
     ui->earGameButton->setVisible(true);
     ui->freePlayButton->setVisible(true);
-    ui->returnfromsongbutton->hide();
+    ui->returnfromchordbutton->hide();
+    ui->randombutton->hide();
+    ui->chordanswerbutton->hide();
+    ui->nextchordbutton->hide();
     virtualKeyboard->setFocus();
 };
 

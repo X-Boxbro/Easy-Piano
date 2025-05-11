@@ -14,6 +14,7 @@ class pianokeys:public QObject
     Q_OBJECT
     friend class notesenseanswer;
     friend class mappingmanager;
+    friend class chordsenseanswer;
 public:
     explicit pianokeys(fluidsynth_initial*synth,QObject *parent =nullptr);
     void addKeys(QPushButton*button,int midiNote);

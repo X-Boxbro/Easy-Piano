@@ -2,6 +2,7 @@
 #define NOTESENSEANSWER_H
 #include"randomnotegenerator.h"
 #include"pianokeys.h"
+#include"keyboard.h"
 #include<QList>
 #include<QMap>
 #include<QTimer>
@@ -13,6 +14,7 @@ public:
     notesenseanswer(RandomNoteGenerator*generator=nullptr,pianokeys*piano=nullptr);
     void getAnswer();
     void pianokeysanswer();
+    void setvirtualKeyboard(keyboard*virtualKeyboard);
 private:
     QList<int> answerNotes;
     RandomNoteGenerator*generator;
@@ -21,6 +23,7 @@ private:
     int currentIndex;
     QMap<int,QPushButton*>keyMap;
     bool isAnswering;
+    keyboard*virtualKeyboard;
 };
 
 #endif // NOTESENSEANSWER_H

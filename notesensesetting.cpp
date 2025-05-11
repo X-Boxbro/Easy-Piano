@@ -13,7 +13,6 @@ notesensesetting::notesensesetting(QWidget *parent)
     }
     connect(ui->listWidgetScales, &QListWidget::itemChanged, this, [this](QListWidgetItem* item) {
     });
-
 }
 
 notesensesetting::~notesensesetting()
@@ -43,12 +42,9 @@ QList<int>notesensesetting::selectedScales()const{
                 int scale = scaleStr.toInt(&ok);
                 if (ok && scale >= 1 && scale <= 7) {
                     scales.append(scale);
-                    qDebug() << "  Added scale:" << scale;
                 } else {
                     qDebug() << "  Invalid scale string:" << scaleStr;
                 }
-            } else {
-                qDebug() << "  No '(' found in text:" << text;
             }
         }
     }

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chordsensesetting</class>
+ <widget class="QDialog" name="chordsensesetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #3E2B1F; /* 深棕色背景 */
+
+</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>350</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chordsettinglabel">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>40</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe Print</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;</string>
+   </property>
+   <property name="text">
+    <string>Chord Game Setting</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="scalelable">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Myanmar Text</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>和弦选择</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::TextFormat::MarkdownText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="treeWidgetChords">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>150</y>
+     <width>531</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="columnCount">
+    <number>1</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>和弦选择</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>1(大三和弦)</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>C# Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D# Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F# Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G# Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A# Major</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B Major</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>2(小三和弦)</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>C# Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D# Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F# Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G# Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A# Minor</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B Minor</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>3(属七和弦)</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>C7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C#7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D#7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F#7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G#7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A#7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B7</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>4(大七和弦)</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>CMaj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C#Maj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DMaj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D#Maj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EMaj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FMaj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F#Maj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GMaj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G#Maj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AMaj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A#Maj7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BMaj7</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>5(小七和弦)</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Cm7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C#m7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dm7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D#m7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Em7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fm7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F#m7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gm7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G#m7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Am7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A#m7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bm7</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>6(减三和弦)</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Cdim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C#dim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ddim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D#dim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Edim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fdim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F#dim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gdim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G#dim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A#dim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A#dim</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bdim</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>7(增三和弦)</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Caug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C#aug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Daug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D#aug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Eaug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Faug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F#aug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gaug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G#aug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Aaug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A#aug</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Baug</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>chordsensesetting</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>chordsensesetting</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

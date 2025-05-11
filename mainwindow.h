@@ -10,6 +10,9 @@
 #include"notesenseanswer.h"
 #include"randomnotegenerator.h"
 #include<QString>
+#include"chordsensesetting.h"
+#include"randomchordgenerator.h"
+#include"chordsenseanswer.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -36,8 +39,8 @@ public:
     void returnfromfreeWindow();
     void openNoteSenseWindow();
     void returnfromnoteWindow();
-    void openSongWindow();
-    void returnfromsongWindow();
+    void openChordWindow();
+    void returnfromChordWindow();
 private:
     Ui::MainWindow *ui;
     fluidsynth_initial*synth;
@@ -47,5 +50,7 @@ private:
     RandomNoteGenerator*mygenerator;
     notesenseanswer*mynoteanswer;
     QString mappingFolderPath;
+    RandomChordGenerator*mygenerator2;
+    chordsenseanswer*mychordanswer;
 };
 #endif // MAINWINDOW_H

@@ -6030,7 +6030,7 @@ QPushButton:pressed {
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="returnfromsongbutton">
+   <widget class="QPushButton" name="returnfromchordbutton">
     <property name="geometry">
      <rect>
       <x>1190</x>
@@ -6156,6 +6156,99 @@ QPushButton:pressed {
     </property>
     <property name="text">
      <string>下一组音符</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="randombutton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>30</y>
+      <width>281</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>播放和弦</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chordanswerbutton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>130</y>
+      <width>281</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>验证答案</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextchordbutton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>230</y>
+      <width>281</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;              
+    color: white;                         /* 按钮文字颜色 */
+    border: none;              /* 按钮边框 */
+font-size: 40px;
+text-align: bottom; padding-bottom: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+    color:lightgray;         
+}
+
+QPushButton:pressed {
+     color: #FF4500;         /* 按下时背景颜色改为红橙色 */
+}   </string>
+    </property>
+    <property name="text">
+     <string>下一组和弦</string>
     </property>
    </widget>
   </widget>
