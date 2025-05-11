@@ -8,5 +8,5 @@ Note Playback Function: By pressing the virtual piano keys with the mouse (or af
 Custom Mapping: By clicking the "Start Mapping" button, as well as the "Save" and "Use" buttons, a customized mapping file can be saved, enabling customized mapping and maximizing the convenience for users.
 #功能描述：**音符播放功能**通过鼠标按虚拟琴键（或者自定义键盘与琴键的映射后）按下键盘上的按键，能够播放钢琴对应琴键的音符声音,**自定义映射**，通过点击“开始映射”按钮以及“保存”“使用”来保存一个自定义的映射文件，能实现自定义的映射，最大化方便使用者。
 
-#Installation and Operation: You need to download the fluidsynth library and pkg-config. For this project, mingw-w64-x86_64-fluidsynth 2.4.0-1 is used, and I downloaded it via MYSY2.
-#安装与运行：你需要下载fluidsynth库和pkg-config，项目用的是mingw-w64-x86_64-fluidsynth 2.4.0-1，我是通过MYSY2下载的
+#Installation and Operation: You need to download the fluidsynth library and pkg-config. For this project, mingw-w64-x86_64-fluidsynth 2.4.0-1 is used, and you can download it via MYSY2.
+#安装与运行：你需要下载fluidsynth库和pkg-config，项目用的是mingw-w64-x86_64-fluidsynth 2.4.0-1，可以通过MYSY2或其他下载
