@@ -44,7 +44,7 @@ QStringList chordsensesetting::getSelectedChords() const {
         for (int j = 0; j < parent->childCount(); ++j) {
             QTreeWidgetItem* child = parent->child(j);
             if (child->checkState(0) == Qt::Checked) {
-                selectedChords << child->text(0);  // 假设第0列是名称，如 "C7"、"F#dim"
+                selectedChords << child->text(0);
             }
         }
     }

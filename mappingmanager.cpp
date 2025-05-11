@@ -69,6 +69,7 @@ void mappingmanager::stopDeleting(){
     isDeletingMode=false;
     isMappingMode=true;
     qDebug()<<"Deleting Mode stopped.";
+    currentVirtualKey = nullptr;
 }
 
 void mappingmanager::stopMapping() {

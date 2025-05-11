@@ -56,7 +56,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->startdeletebutton,&QPushButton::clicked,this,&MainWindow::startDeleting);
     connect(ui->stopDeletebutton,&QPushButton::clicked,this,&MainWindow::stopDeleting);
 
-
     ui->earGameButton->hide();
     ui->freePlayButton->hide();
     ui->noteSenseButton->hide();
